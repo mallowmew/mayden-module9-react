@@ -1,0 +1,12 @@
+.owlcat {
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.owlcat img {
+  padding: 20px;
+  height: 200px;
+}
