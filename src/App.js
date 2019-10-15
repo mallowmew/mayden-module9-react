@@ -9,6 +9,7 @@ import CoinToss from './components/CoinToss/CoinFlip';
 import StatefulComponent from './components/StatefulComponent/StatefulComponent';
 import EventfulComponent from './components/EventfulComponent/EventfulComponent';
 import ChangingImage from './components/ChangingImage/ChangingImage';
+import ParentComponent from './components/ParentComponent/ParentComponent';
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
       <Header heading="Events"/>
       <EventfulComponent />
       <ChangingImage />
+      <Header heading="Components Inside Components"/>
+      <ParentComponent />
       <Header heading="Submitting Form Data"/>
       <Header heading="Pulling API Data"/>
     </div>
