@@ -10,6 +10,9 @@ import StatefulComponent from './components/StatefulComponent/StatefulComponent'
 import EventfulComponent from './components/EventfulComponent/EventfulComponent';
 import ChangingImage from './components/ChangingImage/ChangingImage';
 import ParentComponent from './components/ParentComponent/ParentComponent';
+import Clock from './components/Clock/Clock';
+import Freddo from './components/Freddo/Freddo';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -35,8 +38,12 @@ function App() {
       <ChangingImage />
       <Header heading="Components Inside Components"/>
       <ParentComponent />
+      <Header heading="Updating Component"/>
+      <Clock />
       <Header heading="Submitting Form Data"/>
       <Header heading="Pulling API Data"/>
+      <Freddo />
+      <Footer />
     </div>
   );
 }

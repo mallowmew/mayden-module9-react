@@ -1,0 +1,13 @@
+.freddos {
+  padding: 0 60px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.freddos img {
+  min-width: 60px;
+  min-height: 60px;
+}

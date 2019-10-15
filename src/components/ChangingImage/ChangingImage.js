@@ -25,7 +25,7 @@ class ChangingImage extends React.Component {
   render() {
     return (
       <div className="changing-image">
-        <img src={this.state.toggleOn ? this.pics.slime : this.pics.gooey} onClick={this.handleClick} />
+        <img src={this.state.toggleOn ? this.pics.slime : this.pics.gooey} onClick={this.handleClick} alt="Slime friends" />
       </div>
     );
   }
