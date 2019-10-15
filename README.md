@@ -1,3 +1,9 @@
+# Mayden Academy Module 9
+
+Learning how to use React
+
+## create-react-app
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
