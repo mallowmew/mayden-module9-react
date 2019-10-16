@@ -15,9 +15,17 @@ class Form extends React.Component {
     event.target.newItem.value = '';
   }
 
+  handleClick = event => {
+    let removeAtIndex = parseInt(event.target.dataset.index);
+    this.setState({stuff: [
+      ...this.state.stuff.slice(0, removeAtIndex),
+      ...this.state.stuff.slice(removeAtIndex + 1)
+    ]});
+  }
+
   render() {
-    let items = this.state.stuff.map( function(thing, index) {
-      return <p key={index} className="item">{thing}</p>;
+    let items = this.state.stuff.map( (thing, index) => {
+      return <p key={index} className="item" data-index={index} onClick={this.handleClick}>{thing}</p>;
     });
 
     return (

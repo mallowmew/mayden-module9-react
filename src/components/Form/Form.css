@@ -29,4 +29,10 @@ form input[type="submit"] {
   padding: 10px;
   max-width: 400px;
   border: 1px dotted gray;
+  transition: border 300ms;
+}
+
+.item:hover {
+  border: 1px dotted white;
+  transition: border 300ms;
 }
