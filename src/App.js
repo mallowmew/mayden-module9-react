@@ -11,6 +11,7 @@ import EventfulComponent from './components/EventfulComponent/EventfulComponent'
 import ChangingImage from './components/ChangingImage/ChangingImage';
 import ParentComponent from './components/ParentComponent/ParentComponent';
 import Clock from './components/Clock/Clock';
+import Form from './components/Form/Form';
 import Freddo from './components/Freddo/Freddo';
 import Footer from './components/Footer/Footer';
 
@@ -41,6 +42,7 @@ function App() {
       <Header heading="Updating Component"/>
       <Clock />
       <Header heading="Submitting Form Data"/>
+      <Form />
       <Header heading="Pulling API Data"/>
       <Freddo />
       <Footer />

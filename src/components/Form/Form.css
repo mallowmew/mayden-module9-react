@@ -1,0 +1,32 @@
+form {
+  padding: 20px;
+}
+
+form label {
+  display: block;
+  padding-bottom: 20px;
+}
+
+form input {
+  border: none;
+  border-radius: 5px;
+  margin: 10px 10px 20px 10px;
+  padding: 10px 20px;
+  vertical-align: middle;
+  font-size: 1.6rem;
+}
+
+form input[type="text"] {
+  width: 300px;
+}
+
+form input[type="submit"] {
+  padding: 10px 20px;
+}
+
+.item {
+  margin: 10px auto;
+  padding: 10px;
+  max-width: 400px;
+  border: 1px dotted gray;
+}

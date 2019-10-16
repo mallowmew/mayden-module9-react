@@ -39,7 +39,7 @@ class Freddo extends React.Component {
     let items = [];
     let iterations = (freddos > 100) ? 100 : freddos;
     for (let i = 0; i < iterations; i++) {
-      items.push(<img src="./freddo.png" alt="Terrible chocolate frog" />);
+      items.push(<img key={i} src="./freddo.png" alt="Terrible chocolate frog" />);
     }
 
     return (
