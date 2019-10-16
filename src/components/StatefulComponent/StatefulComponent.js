@@ -22,11 +22,9 @@ class StatefulComponent extends React.Component {
       <div className="stateful-component">
         <p>Class components can have state.</p>
         <p>This class knows about:</p>
-        <ul>
-          <li>{this.state.name}</li>
-          <li>Age: {this.state.age}</li>
-          <li>{this.state.occupation}</li>
-        </ul>
+        <p>{this.state.name}</p>
+        <p>Age: {this.state.age}</p>
+        <p>Occupation: {this.state.occupation}</p>
       </div>
     );
   }
