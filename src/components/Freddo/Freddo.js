@@ -7,15 +7,34 @@ class Freddo extends React.Component {
 
     this.state = {
       bitcoin: 0,
-      freddoValue: 0.25
+      freddoValue: 0.25,
+      screen: {
+        width: 0,
+        height: 0
+      }
     };
     this.tick();
   }
 
   componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
     this.timerId = setInterval(
       () => this.tick(),
       600000);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions = () => {
+    this.setState({
+      screen: {
+        width: window.innerWidth,
+        height: window.innerHeight
+      }
+    });
   }
 
   tick() {
@@ -35,11 +54,13 @@ class Freddo extends React.Component {
 
   render() {
     let freddos = this.calculateFreddos();
+    let freddoSize = 60; // Desired size of the frog, in pixels
+    let freddosThatFitOnScreen = Math.floor(this.state.screen.width / freddoSize);
 
     let items = [];
-    let iterations = (freddos > 100) ? 100 : freddos;
+    let iterations = freddos > freddosThatFitOnScreen ? freddosThatFitOnScreen : freddos;
     for (let i = 0; i < iterations; i++) {
-      items.push(<img key={i} src="./freddo.png" alt="Terrible chocolate frog" />);
+      items.push(<img key={i} src="./freddo.png" alt="Terrible chocolate frog" style={{width:freddoSize, height:freddoSize}} />);
     }
 
     return (
